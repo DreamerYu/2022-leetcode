@@ -6,7 +6,7 @@ import java.util.Stack;
  * @Author: Dreamer Yu
  * @Date: 12/13/21 6:41 PM
  */
-public class lc227 {
+public class lc227_calculator {
     Map<Character, Integer> priority = new HashMap<>();
 
     public int calculate(String s) {

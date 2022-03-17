@@ -2,7 +2,7 @@
  * @Author: Dreamer Yu
  * @Date: 12/11/21 9:36 AM
  */
-public class lc214 {
+public class lc214_kmp {
 
 
     public String shortestPalindrome(String s) {

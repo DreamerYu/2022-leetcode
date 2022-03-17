@@ -2,7 +2,7 @@
  * @Author: Dreamer Yu
  * @Date: 12/11/21 10:42 AM
  */
-public class lc215 {
+public class lc215_findkth {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1};
