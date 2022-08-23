@@ -5,7 +5,11 @@
 public class lc214_kmp {
 
 
-    public String shortestPalindrome(String s) {
+    public static void main(String[] args) {
+        shortestPalindrome("ababcababd");
+    }
+
+    public static String shortestPalindrome(String s) {
         int n = s.length();
 
         if(n == 0) return "";

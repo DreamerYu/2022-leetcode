@@ -38,4 +38,40 @@ public class lc556 {
         a[j] = temp;
     }
 
+
+    public int nextGreaterElement2(int n) {
+
+        String num = String.valueOf(n);
+        int len = num.length();
+
+        char[] chs = num.toCharArray();
+
+        for(int i = len -1; i > 0; i--){
+            if(chs[i] <= chs[i -1]){
+                continue;
+            }else {
+                char head = chs[i-1];
+                int needchange = 0;
+                for(int j = len - 1; j > i-1; j--){
+                    if(chs[j] > head){
+                        needchange = j;
+                        break;
+                    }
+                }
+                swap(chs, i - 1, needchange);
+
+                reverse(chs, i);
+
+                long l = Long.valueOf(new String(chs));
+                if(l > Integer.MAX_VALUE){
+                    return -1;
+                }else{
+                    return (int) l;
+                }
+            }
+        }
+        return -1;
+
+    }
+
 }

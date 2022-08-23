@@ -42,4 +42,6 @@ public class lc402 {
         }
         return index >= s.length()? "0" : s.substring(index);
     }
+
+
 }
